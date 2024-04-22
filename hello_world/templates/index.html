@@ -1,10 +1,7 @@
-{% load django_browser_reload %}
-{% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>W3.CSS Template</title>
+<title>NautSulfur Daily</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -16,13 +13,15 @@ body {font-size:16px;}
 .w3-half img:hover{opacity:1}
 </style>
 </head>
+<!-- Feather Script -->
+<script src="https://unpkg.com/feather-icons"></script>
 <body>
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Naut<br>Ekwal !=</b></h3>
+    <h3 class="w3-padding-64"><b>Naut<br>Sulfur</b></h3>
   </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Featured</a> 
@@ -35,7 +34,7 @@ body {font-size:16px;}
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Company Name</span>
+  <span>NautSulfur</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -46,8 +45,8 @@ body {font-size:16px;}
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Interior Design</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
+    <h1 class="w3-jumbo"><b>April 2024</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Featured</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
   
@@ -55,19 +54,29 @@ body {font-size:16px;}
 
   
   <div class="w3-display-container w3-mobile">
- <h2>Card Example</h2>
+ <h2>New Music</h2>
 
  <div class="row">
   <div class="column">
-    <div class="card"><div class="w3-card-4" style="width:70%">
+    <div class="card"><div class="w3-card-4" style="width:70%; padding: auto;">
     <header class="w3-container w3-light-grey"><h3>Akosua H.</h3></header>
     <div class="w3-container">
-      <p>1 new friend request</p>
+      <p></p>
       <hr>
       <iframe width="100%" height="315" src="https://www.youtube.com/embed/28y7BxZtsvQ?si=m0RIFvXVf2VXP66X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
  <p>“Heartbreaker” by @akosuak0sua is out now on all streaming platforms.</p><br>
     </div>
-    <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
+    <div class="icons w3-padding">
+      <a href="#" target="_blank">
+        <i data-feather="instagram"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i data-feather="twitter"></i>
+      </a>
+    </div>
+    
+    <button class="w3-button w3-block w3-dark-grey">+ Support Akosua's Channel</button>
+    
   </div>
     </div>
   </div>
@@ -75,15 +84,23 @@ body {font-size:16px;}
 
  <div class="row">
   <div class="column">
-    <div class="card"><div class="w3-card-4" style="width:70%">
+    <div class="card"><div class="w3-card-4" style="width:70%; padding: auto;">
     <header class="w3-container w3-light-grey"><h3>NVSV</h3></header>
     <div class="w3-container">
       <p>The Floaters Interview</p>
       <hr>
       <iframe width="100%" height="315" src="https://www.youtube.com/embed/vPhU_7dHhpc?si=V6wAF8JeLYZJrbMd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
- <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+ <p>We do not own rights to this music! Follow the artist on Instagram: </p><br>
     </div>
-    <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
+    <div class="icons w3-padding">
+      <a href="#" target="_blank">
+        <i data-feather="instagram"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i data-feather="twitter"></i>
+      </a>
+    </div>
+    <button class="w3-button w3-block w3-dark-grey">+ Support NVSV's Channel</button>
   </div>
     </div>
   </div>
@@ -92,15 +109,23 @@ body {font-size:16px;}
 
   <div class="row">
     <div class="column">
-      <div class="card"><div class="w3-card-4" style="width:70%">
+      <div class="card"><div class="w3-card-4" style="width:70%; padding: auto;">
       <header class="w3-container w3-light-grey"><h3>3CoMMa$</h3></header>
       <div class="w3-container">
-        <p>Floaters Freestyle</p>
+        <p>The Floaters Freestyle</p>
         <hr>
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/nTAF-sr3pa4?si=bQf-0OMQI6BAZayK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+   <p>We do not own rights to this music! Follow the artist on Instagram: </p><br>
       </div>
-      <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
+      <div class="icons w3-padding">
+        <a href="#" target="_blank">
+          <i data-feather="instagram"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i data-feather="twitter"></i>
+        </a>
+      </div>
+      <button class="w3-button w3-block w3-dark-grey">+ Support 3CoMMa$ Channel</button>
     </div>
       </div>
     </div>
@@ -109,15 +134,23 @@ body {font-size:16px;}
 
     <div class="row">
       <div class="column">
-        <div class="card"><div class="w3-card-4" style="width:70%">
+        <div class="card"><div class="w3-card-4" style="width:70%; padding: auto;">
         <header class="w3-container w3-light-grey"><h3>Jai</h3></header>
         <div class="w3-container">
           <p>Cancelled</p>
           <hr>
           <iframe width="100%" height="315" src="https://www.youtube.com/embed/SAYNrQvRYrg?si=rCt_oj5q6fg6V_T6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-     <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+     <p>We do not own rights to this music! Follow the artist on Instagram: </p><br>
         </div>
-        <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
+        <div class="icons w3-padding">
+          <a href="#" target="_blank">
+            <i data-feather="instagram"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i data-feather="twitter"></i>
+          </a>
+        </div>
+        <button class="w3-button w3-block w3-dark-grey">+ Support Jai's Channel</button>
       </div>
         </div>
       </div>
@@ -126,30 +159,46 @@ body {font-size:16px;}
 
       <div class="row">
         <div class="column">
-          <div class="card"><div class="w3-card-4" style="width:70%">
+          <div class="card"><div class="w3-card-4" style="width:70%; padding: auto;">
           <header class="w3-container w3-light-grey"><h3>Nappy Nappa</h3></header>
           <div class="w3-container">
             <p>Death By Desire</p>
             <hr>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/2fdSMNS-ssU?si=-NJYuvRayg4_nHtH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-       <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+       <p>We do not own rights to this music! Follow the artist on Instagram: </p><br>
           </div>
-          <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
+          <div class="icons w3-padding">
+            <a href="#" target="_blank">
+              <i data-feather="instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i data-feather="twitter"></i>
+            </a>
+          </div>
+          <button class="w3-button w3-block w3-dark-grey">+ Support Nappy Nappa's Channel</button>
         </div>
           </div>
         </div>
 
         <div class="row">
           <div class="column">
-            <div class="card"><div class="w3-card-4" style="width:70%">
+            <div class="card"><div class="w3-card-4" style="width:70%; padding: auto;">
             <header class="w3-container w3-light-grey"><h3>PinkyThaRapper</h3></header>
             <div class="w3-container">
               <p>1 new friend request</p>
               <hr>
               <iframe width="100%" height="315" src="https://www.youtube.com/embed/hDo9YtnznTY?si=6KI9F8MKRIBBaPNN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-         <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+         <p>We do not own rights to this music! Follow the artist on Instagram: </p><br>
             </div>
-            <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
+            <div class="icons w3-padding">
+              <a href="#" target="_blank">
+                <i data-feather="instagram"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i data-feather="twitter"></i>
+              </a>
+            </div>
+            <button class="w3-button w3-block w3-dark-grey">+ Support PinkyThaRapper's Channel</button>
           </div>
             </div>
           </div>
@@ -158,15 +207,23 @@ body {font-size:16px;}
 
         <div class="row">
           <div class="column">
-            <div class="card"><div class="w3-card-4" style="width:70%">
+            <div class="card"><div class="w3-card-4" style="width:70%; padding: auto;">
             <header class="w3-container w3-light-grey"><h3>YSC Q</h3></header>
             <div class="w3-container">
               <p>Floaters Freestyle</p>
               <hr>
               <iframe width="100%" height="315" src="https://www.youtube.com/embed/ku2wAw07DnA?si=VMvy7R3b4yEylBpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-         <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+         <p>We do not own rights to this music! Follow the artist on Instagram: </p><br>
             </div>
-            <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
+            <div class="icons w3-padding">
+              <a href="#" target="_blank">
+                <i data-feather="instagram"></i>
+              </a>
+              <a href="#" target="_blank">
+                <i data-feather="twitter"></i>
+              </a>
+            </div>
+            <button class="w3-button w3-block w3-dark-grey">+ Support YSC Q's Channel</button>
           </div>
             </div>
           </div>
@@ -179,43 +236,67 @@ body {font-size:16px;}
 
             <div class="row">
               <div class="column">
-                <div class="card"><div class="w3-card-4" style="width:70%">
+                <div class="card"><div class="w3-card-4" style="width:70%; padding: auto;">
                 <header class="w3-container w3-light-grey"><h3>Situation Slim</h3></header>
                 <div class="w3-container">
                   <p>1 new friend request</p>
                   <hr>
                   <iframe width="100%" height="315" src="https://www.youtube.com/embed/21VT7bLlfwc?si=UwmLpl0lmbMjLk6K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-             <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+             <p>We do not own rights to this music! Follow the artist on Instagram: </p><br>
                 </div>
-                <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
+                <div class="icons w3-padding">
+                  <a href="#" target="_blank">
+                    <i data-feather="instagram"></i>
+                  </a>
+                  <a href="#" target="_blank">
+                    <i data-feather="twitter"></i>
+                  </a>
+                </div>
+                <button class="w3-button w3-block w3-dark-grey">+ Support Situation Slim's Channel</button>
               </div>
                 </div>
               </div>
               <div class="row">
                 <div class="column">
-                  <div class="card"><div class="w3-card-4" style="width:70%">
+                  <div class="card"><div class="w3-card-4" style="width:70%; padding: auto;">
                   <header class="w3-container w3-light-grey"><h3>NASG CHAZ</h3></header>
                   <div class="w3-container">
                     <p>Nino Paid Floaters Interview</p>
                     <hr>
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/FJnwKXISowc?si=VEhNVFpRXH_n8ONH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-               <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+               <p>We do not own rights to this music! Follow the artist on Instagram: </p><br>
                   </div>
-                  <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
+                  <div class="icons w3-padding">
+                    <a href="#" target="_blank">
+                      <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" target="_blank">
+                      <i data-feather="twitter"></i>
+                    </a>
+                  </div>
+                  <button class="w3-button w3-block w3-dark-grey">+ Support NASG CHAZ's Channel</button>
                 </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="column">
-                    <div class="card"><div class="w3-card-4" style="width:70%">
+                    <div class="card"><div class="w3-card-4" style="width:70%; padding: auto;">
                     <header class="w3-container w3-light-grey"><h3>FinagoBaby</h3></header>
                     <div class="w3-container">
                       <p>1 new friend request</p>
                       <hr>
                       <iframe width="100%" height="315" src="https://www.youtube.com/embed/M6L1fER8G-E?si=KkizraIH4mphkIUp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                 <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
+                 <p>We do not own rights to this music! Follow the artist on Instagram: FinagoBaby</p><br>
                     </div>
-                    <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
+                    <div class="icons w3-padding">
+                      <a href="#" target="_blank">
+                        <i data-feather="instagram"></i>
+                      </a>
+                      <a href="#" target="_blank">
+                        <i data-feather="twitter"></i>
+                      </a>
+                    </div>
+                    <button class="w3-button w3-block w3-dark-grey">+ Support FinagoBaby's Channel</button>
                   </div>
                     </div>
                   </div>
@@ -241,8 +322,9 @@ body {font-size:16px;}
   <div class="w3-container" id="About" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>The First Page</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>If you see your video or content on this page or website and want it takend down please reach out to me here or on Twitter. This site does not collect ad revenue and nothing is being sold. this is a blog collecting the music of local artist and other artists of all medums that I come into contact with. Everyones contact information will be posted on each page and you should have seen a description above this paragrapgh including anything you might have missed. Thanks for helping to support new art!
+    <p>My goal here started off as an independet online radio station. There are many challenges in the way of that my first being a limited knowledge of how to code such a User Experience. This is being made to promote my musical and artistic interest but many of the things posted here I will probably be coming across for the first time. </p>
+    <p>Downloads are currently not available and this is the only page with content right now. Over time you will be able to see a collection of all songs and artist who have been posted here as they grow in number. <h2>No one here is selling anything on behalf of these artists and there are no ads tied to this website right now.</h2> This website hosts constructive narratives, help highlight artists locally, and aggregate things that I enjoy.</p>
+    <p>If you see your video or content on this page or website and want it taken down please reach out to me here or on Twitter. This site does not collect ad revenue and nothing is being sold. this is a blog collecting the music of local artist and other artists of all medums that I come into contact with. Everyones contact information will be posted on each page and you should have seen a description above this paragrapgh including anything you might have missed. Thanks for helping to support new art!
     </p>
   </div>
   
@@ -293,8 +375,11 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+
+// Data Feather Script
+feather.replace()
+    
 </script>
 
 </body>
 </html>
-
